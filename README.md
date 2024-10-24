@@ -1,17 +1,17 @@
 Please fork [https://github.com/nerfies/nerfies.github.io](https://github.com/nerfies/nerfies.github.io) if you want to use this website to create your project website.
 
-# Exploring Concept Depth: How Large Language Models Acquire Knowledge at Different Layers?
+# Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents
 
-This is the repository that contains source code for the [Explore Concept Depth](https://luckfort.github.io/explore_CD).
+This is the repository that contains source code for the [Agent Security Bench (ASB)](https://luckfort.github.io/ASBench).
 
 
 Please cite our work:
 ```
-@article{jin2024exploring,
-  title={Exploring Concept Depth: How Large Language Models Acquire Knowledge at Different Layers?},
-  author={Jin, Mingyu and Yu, Qinkai and Huang, Jingyuan and Zeng, Qingcheng and Wang, Zhenting and Hua, Wenyue and Zhao, Haiyan and Mei, Kai and Meng, Yanda and Ding, Kaize and others},
-  journal={arXiv preprint arXiv:2404.07066},
-  year={2024}
+@article{zhang2024agent,
+  title={Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents},
+  author={Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},
+  journal={arXiv preprint arXiv:2410.02644},
+  year={2024}
 }
 ```
 
