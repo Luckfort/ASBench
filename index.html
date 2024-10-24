@@ -95,6 +95,7 @@
                 <a href="https://dongyuanjushi.github.io/">Kai Mei</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=XLOJ7R0AAAAJ">Yifei Yao</a><sup>1</sup>,</span>
+            
             <span class="author-block">
               <a href="https://zhentingwang.github.io/">Zhenting Wang</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -218,17 +219,17 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Large language models (LLMs) have shown remarkable performances across a wide range of tasks. However, the mechanisms by which these models encode tasks of varying complexities remain poorly understood. In this paper, we explore the hypothesis that LLMs process concepts of varying complexities in different layers, introducing the idea of "<span class="dnerf">Concept Depth</span>" to suggest that more complex concepts are typically acquired in deeper layers. </p>
-
-          <p>Specifically, we categorize concepts based on their level of abstraction, defining them in the order of increasing complexity within factual, emotional, and inferential tasks. We conduct extensive probing experiments using layer-wise representations across various LLM families (Gemma, LLaMA, Qwen) on various datasets spanning the three domains of tasks. </p>
+          <p>Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. </p>
           
-          <p>Our findings reveal that models could efficiently conduct probing for simpler tasks in shallow layers, and more complex tasks typically necessitate deeper layers for accurate understanding. Additionally, we examine how external factors, such as adding noise to the input and quantizing the model weights, might affect layer-wise representations. Our findings suggest that these factors can impede the development of a conceptual understanding of LLMs until deeper layers are explored. </p>
+          <p>To address this, we introduce <span class="dnerf">Agent Security Bench (ASB)</span>, a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 23 different types of attack/defense methods, and 8 evaluation metrics. </p>
           
-          <p>We hope that our proposed concept and experimental insights will enhance the understanding of the mechanisms underlying LLMs. Our codes are available at 
-            <a href="https://github.com/Luckfort/CD">
-              <span>https://github.com/Luckfort/CD</span>.
-            </a>
-          </p>
+          <p>Based on <span class="dnerf">ASB</span>, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, a mixed attack, and 10 corresponding defenses across 13 LLM backbones with nearly 90,000 testing cases in total. </p>
+          
+          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30\%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. Our code can be found at 
+          <a href="https://github.com/agiresearch/ASB">
+            <span>https://github.com/agiresearch/ASB</span>.
+          </a>
+        </p>
           
         </div>
       </div>
@@ -496,14 +497,15 @@ The layer-wise representations of LLMs are susceptible to noise and high-ratio q
       <div class="column is-four-fifths">
         <h2 class="title is-3">Conclusion</h2>
         <div class="content has-text-justified">
-          <p>This paper proposes <span class="dnerf">Concept Depth</span>, the phenomenon that different concepts are learned in different layers of LLMs, i.e., more difficult concepts are fully acquired with deeper layers.</p>
+          
+          📏We introduce <span class="dnerf">ASB</span>, a benchmark for evaluating the security of LLM agents under various attacks and defenses. 
+          
+          💥<span class="dnerf">ASB</span> reveals key vulnerabilities of LLM-based agents in every operational step. 
+          
+          🛡<span class="dnerf">ASB</span> provides a crucial resource for developing stronger defenses and more resilient LLM agents. 
+          
+          💡In the future, we will focus on improving defenses and expanding attack scenarios.
 
-          <p>We conducted several experiments around <span class="dnerf">Concept Depth</span> using probe techniques. Our research suggests that LLMs tend to effectively categorize easy tasks, indicating that these concepts are learned in the first few initial layers. </p>
-          
-          <p>In contrast, complex tasks may only be recognizable (if at all) in deeper layers, and LLMs of the same size perform largely consistently across datasets regarding Concept Depth. </p>
-          
-          <p>Compressing the model weight to 16-bit representations for future LLMs' designs is also a promising method for saving computation memory.</p>
-          
         </div>
       </div>
     </div>
