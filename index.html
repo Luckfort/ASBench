@@ -172,6 +172,31 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. </p>
+          
+          <p>To address this, we introduce <span class="dnerf">Agent Security Bench (ASB)</span>, a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 23 different types of attack/defense methods, and 8 evaluation metrics. </p>
+          
+          <p>Based on <span class="dnerf">ASB</span>, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, a mixed attack, and 10 corresponding defenses across 13 LLM backbones with nearly 90,000 testing cases in total. </p>
+          
+          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. Our code can be found at 
+          <a href="https://github.com/agiresearch/ASB">
+            <span>https://github.com/agiresearch/ASB</span>.
+          </a>
+        </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</sections>
 
 <section class="main image">
   <style type="text/css">
@@ -273,33 +298,6 @@
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. </p>
-          
-          <p>To address this, we introduce <span class="dnerf">Agent Security Bench (ASB)</span>, a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 23 different types of attack/defense methods, and 8 evaluation metrics. </p>
-          
-          <p>Based on <span class="dnerf">ASB</span>, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, a mixed attack, and 10 corresponding defenses across 13 LLM backbones with nearly 90,000 testing cases in total. </p>
-          
-          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. Our code can be found at 
-          <a href="https://github.com/agiresearch/ASB">
-            <span>https://github.com/agiresearch/ASB</span>.
-          </a>
-        </p>
-          
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-
-
-  <br /> <br />
-
 
   <!--Main Body-->
 
@@ -576,12 +574,12 @@ The layer-wise representations of LLMs are susceptible to noise and high-ratio q
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{jin2024exploring,
-  author    = {Jin, Mingyu and Yu, Qinkai and Huang, Jingyuan and Zeng, Qingcheng and Wang, Zhenting and Hua, Wenyue and Zhao, Haiyan and Mei, Kai and Meng, Yanda and Ding, Kaize and others},
-  title     = {Exploring Concept Depth: How Large Language Models Acquire Knowledge at Different Layers?},
-  journal   = {arXiv preprint arXiv:2404.07066},
-  year      = {2024},
-}</code></pre>
+    <pre><code>@article{zhang2024agent,
+      title={Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents},
+      author={Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},
+      journal={arXiv preprint arXiv:2410.02644},
+      year={2024}
+    }</code></pre>
   </div>
 </section>
 
