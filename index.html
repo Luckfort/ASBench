@@ -350,27 +350,13 @@
       <h2 class="title is-3">🗃️Dataset Information</h2>
       
       <div class="content has-text-justified">
-        <p align="center">
+        <!--<p align="center">
           We use the following datasets in our experiments.
-        </p>
+        </p>-->
         
-        <h4 class="title is-4" align="center">💡Fact</h4>
-        <p align="center">We let LLM solve true-of-false problems, based on an objective factual basis.</p>
-        <p align="center">🌆 <b>Cities</b>: Consists of statements about the location of cities and their veracity labels (e.g., The city of Zagreb is in Japan, which is wrong).</p>
-        <p align="center">🔎 <b>Common-Claim</b>: A dataset of boolean statements, each labeled by two humans as common-knowledge-true, common-knowledge-false, or neither.</p>
-        <p align="center">💥 <b>Counterfact</b>: Includes myriad counterfactuals that allows quantitative testing of specificity and generalization when learning a counterfactual.</p>
-        
-        <h4 class="title is-4" align="center">❤️Emotion</h4>
-        <p align="center">Given a social media or movie review, have the LLM solve a dichotomous sentiment problem.</p>
-        <p align="center">💢 <b>HateEval</b>: Has tweets which were annotated hierarchically.</p>
-        <p align="center">🎬 <b>STSA</b>: Includes movie reviews, wih positive and negative reviews, reflecting the writer's overall intention for this review. </p>
-        <p align="center">📽️ <b>IMDb</b>: A benchmark dataset for binary sentiment classification. We use 2000 of these samples.</p>
-        <p align="center">🤭 <b>Sarcasm</b>: A superior news headline dataset that tells if the headlines are sarcastic.</p>
+        <h4 class="title is-4" align="center">🤖Agent Senario</h4>
+        <p align="center">Description/Task/Selected Tools</p>
 
-        <h4 class="title is-4" align="center">🧠Reasoning</h4>
-        <p align="center">Examing LLM's reasoning skills for bi-classification.</p>
-        <p align="center">🗝️ <b>StrategyQA</b>: Contains questions across all knowledge domains to elicit creative and diverse yes/no questions that require implicit reasoning steps.</p>
-        <p align="center">🪙 <b>Coinflip</b>: Includes coin flipping queries, asking if a coin remains heads up after it is either flipped or left unflipped by individuals.</p>
       </div>
     </div>
   </div>
@@ -384,54 +370,13 @@
       <h2 class="title is-3">👀Case Examples</h2>
       
       <div class="content has-text-justified">
-        <h4 class="title is-4" align="center">Fact: Cities</h4>
+        <h4 class="title is-4" align="center">⚔️✅Attack Success</h4>
 
-        <p>
-          ✅ Judge the statement is True or False.
-          <font color="#0000FF">
-            The city of Tokyo is in Japan.
-          </font>
-        </p>
-        <p>
-          ❌ Judge the statement is True or False.
-          <font color="#0000FF">
-            The city of Lodz is in the Dominican Republic.
-          </font> 
-        </p>
+        <h4 class="title is-4" align="center">⚔️❌Attack Failed</h4>
 
-        <h4 class="title is-4" align="center">Emotional: HateEval</h4>
+        <h4 class="title is-4" align="center">🛡️✅Defense Success</h4>
 
-        <p>
-          ✅
-          <font color="#0000FF">
-            Here it is not about Refugees or Illegal immigrants. It is about whether one has documents before 1971 or not. Now, it is difficult for slum people and beggars to show valid documents, except the name in voter list. 
-          </font>
-          According to the comment, tell whether they present hate speech or not.
-        </p>
-        <p>
-          ❌
-          <font color="#0000FF">
-           Labor migrants transfer almost $10 billion a year to Ukraine.
-          </font> According to the comment, tell whether they present hate speech or not.
-        </p>
-
-        <h4 class="title is-4" align="center">Reasoning: Coin-Flip</h4>
-
-        <p>
-          ✅
-          <font color="#0000FF">
-            A coin is heads up. Whitney flips the coin. Erika does not flip the coin. Tj does not flip the coin. Benito flips the coin. Is the coin still heads up? Note that "flip" here means "reverse".
-          </font>
-          According to the flipping process above, determine if a coin remains heads up after it is either flipped or left unflipped by individuals. Therefore, the answer (Yes or No) is?
-        </p>
-        <p>
-          ❌
-          <font color="#0000FF">
-            A coin is heads up. Lucky does not flip the coin. Mireya flips the coin. Jj flips the coin. Kc flips the coin. Is the coin still heads up? Note that "flip" here means "reverse".
-          </font>
-          According to the flipping process above, determine if a coin remains heads up after it is either flipped or left unflipped by individuals. Therefore, the answer (Yes or No) is?
-        </p>
-
+        <h4 class="title is-4" align="center">🛡️❌Defense Failed</h4>
         
       </div>
     </div>
@@ -453,7 +398,7 @@
         <p>⚔️<b>Agent Attack</b>: We evaluated the agent attacks with 5 attack types on 13 LLM backbones.</p>
 
         <p>🛡️<b>Agent Defense</b>: We evaluated the agent defenses against all four types of agent attacks.</p>
-        
+
         <p>💪<b>LLM Capability vs ASR</b>: We evaluated the correlation between backbone LLM leaderboard quality and average ASR across various attacks.</p>
 
       </div>
@@ -492,7 +437,7 @@
       author={Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},
       journal={arXiv preprint arXiv:2410.02644},
       year={2024}
-    }</code></pre>
+}</code></pre>
   </div>
 </section>
 
