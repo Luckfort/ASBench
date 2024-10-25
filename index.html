@@ -244,7 +244,7 @@
                 </p>
                 <div class="image-body">
                   <div align=center>
-                    <img src="./static/images/DPI.png" alt="Agent Attack" style="width: 30%;">
+                    <img src="./static/images/DPI.png" alt="Agent Attack" style="width: 100%;">
                     <div class="columns is-centered has-text-centered">
                       <div class="column is-three-fifths">
                         <h2 class="subtitle has-text-centered">
@@ -268,7 +268,7 @@
                   </p>
                   <div class="image-body">
                     <div align=center>
-                      <img src="./static/images/OPI.png" alt="Agent Attack" style="width: 30%;">
+                      <img src="./static/images/OPI.png" alt="Agent Attack" style="width: 100%;">
                       <div class="columns is-centered has-text-centered">
                         <div class="column is-three-fifths">
                           <h2 class="subtitle has-text-centered">
@@ -289,33 +289,75 @@
       
       <br /> <br />
 
-        <div class="image-body">
-          <div align=center>
-            <img src="./static/images/MP.png" alt="Agent Attack" style="width: 30%;">
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-three-fifths">
-                <h2 class="subtitle has-text-centered">
-                  Overview of Memory Poisoned Attack.
-                </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">⚔️Attack Methods on Agents</h2>
+      <section class="section">
+        <div class="container is-max-desktop">
+      
+          <div class="columns is-centered">
+      
+            <!-- MP. -->
+            <div class="column">
+              <div class="content">
+                <h2 class="title is-3">Memory Poisoning Attack</h2>
+                <p>
+                  In this scenario, a third-party attacker compromised an agent previously, generating a poisoned plan that was stored in the memory database. When the <i>system_admin_agent</i> retrieves a similar plan from memory for a similar task, the LLM processes it and generates another poisoned plan. This induces the agent to perform incorrect actions, ultimately invoking <i>Data Export</i> to leak financial reports.
+                </p>
+                <div class="image-body">
+                  <div align=center>
+                    <img src="./static/images/MP.png" alt="Agent Attack" style="width: 100%;">
+                    <div class="columns is-centered has-text-centered">
+                      <div class="column is-three-fifths">
+                        <h2 class="subtitle has-text-centered">
+                          Overview of Memory Poisoning Attack.
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ MP. -->
+      
+            <!-- PoT. -->
+            <div class="column">
+              <h2 class="title is-3">Plan-of-thought Backdoor Attack</h2>
+              <div class="columns is-centered">
+                <div class="column content">
+                  <p>
+                    In this scenario, a third-party attacker embeds backdoored PoT demonstrations into the system prompt, instructing the <i>system_admin_agent</i> to activate the <i>Data Export</i> attack tool when encountering the trigger phrase ``:)''. Upon receiving a user prompt with the appended trigger phrase, the LLM generates a corrupted plan, misleading the agent into performing unintended actions.  </p>
+                  </p>
+                  <div class="image-body">
+                    <div align=center>
+                      <img src="./static/images/PoT.png" alt="Agent Attack" style="width: 100%;">
+                      <div class="columns is-centered has-text-centered">
+                        <div class="column is-three-fifths">
+                          <h2 class="subtitle has-text-centered">
+                            Overview of Plan-of-thought (PoT) Backdoor Attack.
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
               </div>
             </div>
           </div>
+          <!--/ PoT. -->
         </div>
+      </div>
+      
+      <br /> <br />
 
-        <br /> <br />
-
-        <div class="image-body">
-          <div align=center>
-            <img src="./static/images/PoT.png" alt="Agent Attack" style="width: 30%;">
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-three-fifths">
-                <h2 class="subtitle has-text-centered">
-                  Overview of Plan-of-thought (PoT) Attack.
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
 </section>
