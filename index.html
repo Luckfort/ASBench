@@ -75,8 +75,8 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Zhejiang University,</span>
+                    <span class="author-block"><sup>2</sup>Rutgers University</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -140,22 +140,18 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Opening Image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="./static/images/LLM Agent Attack.jpg" alt="Agent Attack" style="width: 50%;">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Overview of the LLM Agent Attacking Framework, including Direct Prompt Injections (DPI), Observation Prompt Injections (OPI), Plan-of-Thought (PoT) Backdoor, and Memory Poisoning Attacks, which target the user query, observations, system prompts, and memory retrieval respectively of the agent during action planning and execution.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- Opening Image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -164,9 +160,16 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          <p>Although LLM-based agents, powered by Large Language Models (LLMs), can use external tools and memory mechanisms to solve complex real-world tasks, they may also introduce critical security vulnerabilities. However, the existing literature does not comprehensively evaluate attacks and defenses against LLM-based agents. </p>
+          
+          <p>To address this, we introduce <span class="dnerf">Agent Security Bench (ASB)</span>, a comprehensive framework designed to formalize, benchmark, and evaluate the attacks and defenses of LLM-based agents, including 10 scenarios (e.g., e-commerce, autonomous driving, finance), 10 agents targeting the scenarios, over 400 tools, 23 different types of attack/defense methods, and 8 evaluation metrics. </p>
+          
+          <p>Based on <span class="dnerf">ASB</span>, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, a mixed attack, and 10 corresponding defenses across 13 LLM backbones with nearly 90,000 testing cases in total. </p>
+          
+          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. Our code can be found at 
+          <a href="https://github.com/agiresearch/ASB">
+            <span>https://github.com/agiresearch/ASB</span>.
+          </a></p>
         </div>
       </div>
     </div>
@@ -272,12 +275,33 @@
 <!-- End video carousel -->
 
 
+<!-- Conclusion -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          
+          <p>📏We introduce <span class="dnerf">ASB</span>, a benchmark for evaluating the security of LLM agents under various attacks and defenses. </p>
+          
+          <p>💥<span class="dnerf">ASB</span> reveals key vulnerabilities of LLM-based agents in every operational step. </p>
+          
+          <p>🛡️<span class="dnerf">ASB</span> provides a crucial resource for developing stronger defenses and more resilient LLM agents. </p>
+          
+          <p>💡In the future, we will focus on improving defenses and expanding attack scenarios.</p>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Conclusion -->
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!--<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -287,7 +311,7 @@
         
       </div>
     </div>
-  </section>
+  </section>-->
 <!--End paper poster -->
 
 
@@ -295,7 +319,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{zhang2024agent,
+        title={Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents},
+        author={Zhang, Hanrong and Huang, Jingyuan and Mei, Kai and Yao, Yifei and Wang, Zhenting and Zhan, Chenlu and Wang, Hongwei and Zhang, Yongfeng},
+        journal={arXiv preprint arXiv:2410.02644},
+        year={2024}
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
