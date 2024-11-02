@@ -447,16 +447,6 @@
       <h2 class="title is-3">
         <div align=center>📊Experiments</div>
       </h2>
-
-      <p>We have conducted extensive experiments on both attack and defense of agent, and the experiments are rich in results. Please move to our github to see them. </p>
-
-      <p>Here, we could give you an overview on our experiments. The experiments we conducted are as follows:</p>
-
-      <p>⚔️<b>Agent Attack</b>: We evaluated the agent attacks with 5 attack types on 13 LLM backbones.</p>
-
-      <p>🛡️<b>Agent Defense</b>: We evaluated the agent defenses against all four types of agent attacks.</p>
-
-      <p>💪<b>LLM Capability vs ASR</b>: We evaluated the correlation between backbone LLM leaderboard quality and average ASR across various attacks.</p>
       
       <h4 class="title is-3">
         <div align=center><b>📏Evaluation Metrics</b></div>
@@ -468,9 +458,21 @@
         </div>
       </div>
 
+      <p>We introduce the evaluation metrics in the following above. Generally, a higher ASR indicates a more effective attack. A lower ASR-d indicates a more effective defense. The refuse rate is measured to assess how agents recognize and reject unsafe user requests, ensuring safe and policy-compliant actions. Our benchmark includes both aggressive and non-aggressive tasks to evaluate this ability. Higher RR indicates more refusal of aggressive tasks by the agent. Moreover, if PNA-d is close to PNA, the defense has little negative impact on the agent's normal performance. If BP is close to PNA, it indicates that the agent's actions for clean queries are unaffected by the attack. In addition, lower FPR and FNR indicate a more successful detection defense.</p>
+
       <h4 class="title is-3">
         <div align=center><b>📈Results</b></div>
       </h4>
+
+      <p>We have conducted extensive experiments on both attack and defense of agent, and the experiments are rich in results. </p>
+
+      <p>Here, we could give you an overview on our experiments. The experiments we conducted are as follows:</p>
+
+      <p>⚔️<b>Agent Attack</b>: We evaluated the agent attacks with 5 attack types on 13 LLM backbones.</p>
+
+      <p>🛡️<b>Agent Defense</b>: We evaluated the agent defenses against all four types of agent attacks.</p>
+
+      <p>💪<b>LLM Capability vs ASR</b>: We evaluated the correlation between backbone LLM leaderboard quality and average ASR across various attacks.</p>
 
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
@@ -482,7 +484,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> 1) Mixed Attack is the Most Effective. 2) DPI is Widely Effective. 3) OPI Shows Moderate Effectiveness. 4) Memory Poisoning is the Least Effective. 5) PoT Backdoor Targets Advanced Models. 6) Partial Refusal of Aggressive Instructions. </p>
             </div>
           </h3>
         </div>
@@ -524,7 +526,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> PoT Backdoor Attacks are Effective across Different Triggers. </p>
             </div>
           </h3>
         </div>
@@ -538,7 +540,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> Unaffected Utility Performance for PoT Backdoored Agents. </p>
             </div>
           </h3>
         </div>
@@ -552,7 +554,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> Comparing Different Prompt Injection Ways. </p>
             </div>
           </h3>
         </div>
@@ -566,7 +568,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> Comparisons for Aggressive and Non-aggressive Tasks. </p>
             </div>
           </h3>
         </div>
@@ -580,7 +582,7 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> Slight Decline in Agent Performance from Defenses. </p>
             </div>
           </h3>
         </div>
@@ -594,7 +596,21 @@
           </div>
           <h3 class="subtitle has-text-centered">
             <div align=center>
-              <p>  </p>
+              <p> Ineffectiveness of Defenses for PoT Attack. </p>
+            </div>
+          </h3>
+        </div>
+
+        <div class="item">
+          <!-- Your image here -->
+          <div class="image-body">
+            <div align=center>
+              <img src="./static/images/t18.png" alt="Agent Attack" style="width: 100%;">
+            </div>
+          </div>
+          <h3 class="subtitle has-text-centered">
+            <div align=center>
+              <p> Ineffectiveness of Defenses Against Memory Attacks. </p>
             </div>
           </h3>
         </div>
