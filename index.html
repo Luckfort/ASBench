@@ -174,7 +174,7 @@
           
           <p>Based on ASB, we benchmark 10 prompt injection attacks, a memory poisoning attack, a novel Plan-of-Thought backdoor attack, 4 mixed attacks, and 11 corresponding defenses across 13 LLM backbones.</p>
           
-          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30\%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. We also introduce a new metric to evaluate the agents' capability to balance utility and security. Our code can be found at <a href="https://github.com/agiresearch/ASB">
+          <p>Our benchmark results reveal critical vulnerabilities in different stages of agent operation, including system prompt, user prompt handling, tool usage, and memory retrieval, with the highest average attack success rate of 84.30%, but limited effectiveness shown in current defenses, unveiling important works to be done in terms of agent security for the community. We also introduce a new metric to evaluate the agents' capability to balance utility and security. Our code can be found at <a href="https://github.com/agiresearch/ASB">
             <span>https://github.com/agiresearch/ASB</span>.
           </a></p>
           
@@ -236,7 +236,7 @@
         <!-- Your image here -->
         <div class="image-body">
           <div align=center>
-            <img src="./static/images/OPI.png" alt="Agent Attack" style="width: 70%;">
+            <img src="./static/images/IPI.png" alt="Agent Attack" style="width: 70%;">
           </div>
         </div>
         <h3 class="subtitle has-text-centered">
@@ -542,8 +542,10 @@
           <img src="./static/images/t4.png" alt="Agent Attack" style="width: 100%;">
         </div>
       </div>
-
+      
+      <div align=justify>
       <p>We introduce the evaluation metrics in the figure above. Generally, a higher ASR indicates a more effective attack. After a defense, A lower ASR indicates a more effective defense. The refuse rate is measured to assess how agents recognize and reject unsafe user requests, ensuring safe and policy-compliant actions. Our benchmark includes both aggressive and non-aggressive tasks to evaluate this ability. Higher RR indicates more refusal of aggressive tasks by the agent. If BP is close to PNA, it indicates that the agent's actions for clean queries are unaffected by the attack. In addition, lower FPR and FNR indicate a more successful detection defense.</p>
+      </div>
 
       <br/><br/>
       <h4 class="title is-3">
